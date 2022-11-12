@@ -3,6 +3,7 @@ import logoWhite from "../asset/logo_white.svg";
 import { ReactComponent as Facebook } from "../asset/facebook.svg";
 import { ReactComponent as Instagram } from "../asset/instagram.svg";
 import { ReactComponent as Twitter } from "../asset/twitter.svg";
+import { ReactComponent as Copyright } from "../asset/copyright.svg";
 
 const Footer = () => {
   return (
@@ -20,7 +21,10 @@ const Footer = () => {
             <Twitter />
           </div>
 
-          <p className="text-white text-sm">2022 Metabnb</p>
+          <p className="text-white flex items-center gap-2 text-sm">
+            <Copyright />
+            2022 Metabnb
+          </p>
         </div>
       </div>
       <div className="">

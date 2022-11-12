@@ -78,27 +78,27 @@ const Home = () => {
       <div className="my-20 flex flex-col mx-14 items-center">
         <h1 className="font-bold text-3xl text-center">
           Inspiration for your next adventure
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+        </h1>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
           place-items-center
           xl:grid-cols-4 mt-10  gap-5"
-          >
-            {inspirationData.map((item, index) => (
-              <div key={index}>
-                {item.content.map((content) => (
-                  <Card
-                    Image={item.img}
-                    duration={content.duration}
-                    location={content.location}
-                    name={content.name}
-                    mbt={content.mbt}
-                    rating={content.rating}
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
-        </h1>
+        >
+          {inspirationData.map((item, index) => (
+            <div key={index}>
+              {item.content.map((content) => (
+                <Card
+                  Image={item.img}
+                  duration={content.duration}
+                  location={content.location}
+                  name={content.name}
+                  mbt={content.mbt}
+                  rating={content.rating}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* metabnb */}

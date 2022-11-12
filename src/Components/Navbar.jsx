@@ -17,7 +17,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "text-xl  bg-main-bg" : "")}
-          to="/"
+          to="/place-to-stay"
         >
           Place to Stay
         </NavLink>
