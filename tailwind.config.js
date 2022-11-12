@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        "main-bg": "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
+      },
+    },
   },
   plugins: [],
 };
