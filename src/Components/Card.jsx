@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ Image, rating, location, mbt, duration, name }) => {
   return (
     <div
-      className="p-4 w-[292px]
+      className="p-4 w-[292px] hover:scale-110 cursor-pointer duration-300
     h-[372px] border-2-[#434343] rounded-lg border"
     >
       <img className="mb-2" src={Image} alt="" />

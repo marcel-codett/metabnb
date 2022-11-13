@@ -9,11 +9,11 @@ const Footer = () => {
   return (
     <div
       className="bg-[#1D1D1E] 
-     p-20 flex items-start
-    justify-between  h-max"
+     p-9 md:p-20 lg:p-20 flex lg:flex-row flex-col items-start
+    justify-between h-max"
     >
-      <div className="gap-20 flex flex-col">
-        <img className="mb-20" src={logoWhite} alt="" />
+      <div className="gap-3 lg:gap-20 flex flex-col mb-20 lg:mb-0">
+        <img className="mb-8 lg:mb-20" src={logoWhite} alt="" />
         <div>
           <div className="flex mb-12 items-center gap-10">
             <Facebook />
@@ -27,31 +27,46 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="">
-        <ul className="font-light text-white flex gap-10 flex-col">
+      <div className="lg:block flex mt-0 lg:mb-0 lg:mt-0 mb-10 lg:w-auto w-full md:w-10/12">
+        <ul className="font-light w-full text-white flex gap-4 lg:gap-10 flex-col">
           <li className="font-bold">Community</li>
-          <li>NFT</li>
-          <li>Tokens</li>
-          <li>Landlords</li>
-          <li>Discord</li>
+          <div
+            className="flex lg:items-start flex-row lg:flex-col
+           items-center lg:gap-10 lg:w-auto w-[90%] justify-between"
+          >
+            <li>NFT</li>
+            <li>Tokens</li>
+            <li>Landlords</li>
+            <li>Discord</li>
+          </div>
         </ul>
       </div>
-      <div>
-        <ul className="font-light text-white flex gap-10 flex-col">
+      <div className="lg:block flex mt-0 lg:mb-0 lg:mt-0 mb-10 lg:w-auto w-full md:w-10/12">
+        <ul className="font-light w-full text-white flex gap-4 lg:gap-10 flex-col">
           <li className="font-bold">Places</li>
-          <li>Castle</li>
-          <li>Farms</li>
-          <li>Beach</li>
-          <li>Learn more</li>
+          <div
+            className="flex lg:items-start flex-row lg:flex-col
+           items-center lg:gap-10 lg:w-auto w-[90%] justify-between"
+          >
+            <li>Castle</li>
+            <li>Farms</li>
+            <li>Beach</li>
+            <li>Learn more</li>
+          </div>
         </ul>
       </div>
-      <div>
-        <ul className="font-light text-white flex gap-10 flex-col">
+      <div className="lg:block flex mt-0 lg:mb-0 lg:mt-0 mb-10 lg:w-auto w-full md:w-10/12">
+        <ul className="font-light w-full text-white flex gap-4 lg:gap-10 flex-col">
           <li className="font-bold">About us</li>
-          <li>Road map</li>
-          <li>Creators</li>
-          <li>Career</li>
-          <li>Contact us</li>
+          <div
+            className="flex lg:items-start flex-row lg:flex-col
+           items-center lg:gap-10 lg:w-auto w-full justify-between"
+          >
+            <li>Road map</li>
+            <li>Creators</li>
+            <li>Career</li>
+            <li>Contact us</li>
+          </div>
         </ul>
       </div>
     </div>

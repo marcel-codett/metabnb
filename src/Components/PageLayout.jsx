@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const PageLayout = () => {
+const PageLayout = ({ setNavShow, setShow }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar setNavShow={setNavShow} setShow={setShow} />
       <Outlet />
       <Footer />
     </div>
