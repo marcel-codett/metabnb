@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React from "react";
 import bannerImg1 from "../asset/bannerImg1.png";
 import bannerImg2 from "../asset/bannerImg2.png";
 import bannerImg3 from "../asset/bannerImg3.png";
@@ -13,31 +13,10 @@ import Card from "../Components/Card";
 import { inspirationData } from "../data/dummy";
 
 const Home = () => {
-  const [windowPosition, setwindowPosition] = useState();
-  const [animate, setanimate] = useState(false);
-
-  useEffect(() => {
-    const handleWindowPosition = () => {
-      console.log(window.innerHeight);
-      setwindowPosition(window.innerHeight);
-    };
-
-    window.addEventListener("scroll", handleWindowPosition);
-    return () => window.removeEventListener("scroll", handleWindowPosition);
-  }, []);
-
-  useEffect(() => {
-    if (windowPosition < 885) {
-      setanimate(true);
-    } else {
-      setanimate(false);
-    }
-  }, [windowPosition]);
-
   return (
     <div>
       {/* Banner section */}
-      <div className="mt-40 mb-20 mx-14 gap-20 lg:flex-row flex-col flex items-center">
+      <div className="lg:mt-40 md:mt-40 mt-28 mb-20 lg:mx-14 md:mx-14 mx-10 gap-20 lg:flex-row flex-col flex items-center">
         <div className="lg:w-2/3">
           <h1
             className="md:w-full lg:leading-[60px] text-[2.6rem] w-[100%] font-normal md:flex block lg:flex flex-wrap 
@@ -83,11 +62,11 @@ const Home = () => {
 
         {/* images */}
         <div className="flex gap-7 lg:w-1/2 space-y-10">
-          <div className="flex lg:w-1/2 flex-col gap-2">
+          <div className="flex  lg:w-1/2 flex-col gap-2">
             <img className="" src={bannerImg1} alt="" />
             <img className="" src={bannerImg2} alt="" />
           </div>
-          <div className="flex w-1/2 flex-col gap-2">
+          <div className="flex max-[450px]:w-[70%] w-1/2 flex-col gap-2">
             <img src={bannerImg3} alt="" />
             <img src={bannerImg4} alt="" />
           </div>
@@ -135,17 +114,20 @@ const Home = () => {
 
       {/* metabnb */}
 
-      <div className="h-max flex-col xl:flex-row flex bg-gradient-to-r from-[#A02279] to-[#881b65] p-20 pt-40 ">
+      <div
+        className="h-max flex-col xl:flex-row flex bg-gradient-to-r from-[#A02279] to-[#881b65] 
+      lg:p-20 md:p-16  p-12 pt-20 lg:pt-40 "
+      >
         <div className="mb-20 lg:0 xl:w-1/2  text-white flex flex-col gap-14">
           <h2 className="font-bold text-3xl">Metabnb NFTs</h2>
-          <p className="text-md font-light w-full lg:w[80%] leading-8">
+          <p className="text-md font-light w-full md:w-[80%] lg:w[80%] leading-8">
             Discover our NFT gift cards collection. Loyal customers gets amazing
             gift cards which are traded as NFTs. These NFTs gives our cutomer
             access to loads of our exclusive services.
           </p>
 
           <button
-            className="bg-white rounded-lg w-2/4 lg:w-2/4 text-[#A02279] 
+            className="bg-white rounded-lg w-[156px]  text-[#A02279] 
           text-bold py-2 px-4"
           >
             Learn more

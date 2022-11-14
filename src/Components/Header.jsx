@@ -11,7 +11,7 @@ const Header = () => {
       <button className="lg:mb-0 mb-4">Carbins</button>
       <button>Off-grid</button>
       <button>Farm</button>
-      <button className="flex items-center gap-4 border border-2-[#434343] ml-3 rounded-xl px-4 py-2">
+      <button className="flex lg:w-auto md:w-auto w-[100px] items-center gap-4 border border-2-[#434343] ml-3 rounded-xl px-4 py-2">
         location
         <Settings className="w-7 h-7" />
       </button>

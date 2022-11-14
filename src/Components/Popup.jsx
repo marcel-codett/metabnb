@@ -7,7 +7,7 @@ import walletCoin from "../asset/wallCoin.png";
 const Popup = ({ setShow }) => {
   return (
     <div className="z-20 bg-half-transparent w-full fixed nav-item h-screen top-0 right-0 ">
-      <div className="absolute left-[50%] translate-x-[-50%] top-[20%] w-[310px] md:w-[500px]  lg:w-[600px] rounded-xl duration-1000 ease-in-out  transition-all  bg-white md:w-400 py-8">
+      <div className="absolute left-[50%] translate-x-[-50%] top-[20%] w-[315px] md:w-[500px]  lg:w-[600px] rounded-xl duration-1000 ease-in-out  transition-all  bg-white md:w-400 py-8">
         <div className="flex items-center justify-between  border-b-1 border-[#dddd] outline-none px-4 pb-3">
           <h4>Connect Wallet</h4>
 

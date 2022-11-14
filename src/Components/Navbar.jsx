@@ -9,16 +9,16 @@ const Navbar = ({ setShow, setNavShow }) => {
 
       <button
         onClick={() => setNavShow((prev) => !prev)}
-        className="lg:hidden inline-block"
+        className="min-[1140px]:hidden inline-block"
       >
         <Menu />
       </button>
-      <div className="hidden   lg:flex items-center lg:gap-14 gap-20">
+      <div className="max-[1140px]:hidden flex items-center lg:gap-14 gap-20">
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#A02279]"
-              : "hover:scale-125 duration-300 hover:text-[#A02279] text-xl text-[#434343]"
+              ? "text-[#A02279] text-xl"
+              : "hover:scale-125  duration-300 hover:text-[#A02279] text-xl text-[#434343]"
           }
           to="/"
         >
@@ -27,8 +27,8 @@ const Navbar = ({ setShow, setNavShow }) => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#A02279]"
-              : "hover:scale-125 duration-300 hover:text-[#A02279]  text-xl text-[#434343]"
+              ? "text-[#A02279] text-xl"
+              : "hover:scale-125  duration-300 hover:text-[#A02279]  text-xl text-[#434343]"
           }
           to="/place-to-stay"
         >
@@ -37,8 +37,8 @@ const Navbar = ({ setShow, setNavShow }) => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#A02279]"
-              : "hover:scale-125 duration-300 hover:text-[#A02279]  text-xl text-[#434343]"
+              ? "text-[#A02279] text-xl"
+              : "hover:scale-125  duration-300 hover:text-[#A02279]  text-xl text-[#434343]"
           }
           to="/nft"
         >
@@ -47,8 +47,8 @@ const Navbar = ({ setShow, setNavShow }) => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#A02279]"
-              : "hover:scale-125 duration-300 hover:text-[#A02279]  text-xl text-[#434343]"
+              ? "text-[#A02279] text-xl xl:mr-[120px] lg:mr-[40px]"
+              : "hover:scale-125  duration-300 hover:text-[#A02279]  text-xl text-[#434343] xl:mr-[120px] lg:mr-[40px]"
           }
           to="/community"
         >
